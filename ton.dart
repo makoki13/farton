@@ -1,5 +1,7 @@
 library farton;
 
+import 'package:flutter/foundation.dart';
+
 enum Types {
   ordinary,
   pruned_branch,
@@ -9,6 +11,16 @@ enum Types {
 }
 enum Flavors { builder, slice, continuation }
 
-class SmartContract {}
+class SmartContract {
+  String _address = "";
+  String _code = "";
+
+  SmartContract(String direccion, String codigo) {
+    _address = direccion;
+    _code = codigo;
+
+    debugPrint(_address, _code);
+  }
+}
 
 class Cell {}
