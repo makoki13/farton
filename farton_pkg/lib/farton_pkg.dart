@@ -4,7 +4,6 @@ import 'package:flutter/foundation.dart';
 
 import './utiles.dart';
 import './shard_prefix.dart';
-import './cell.dart';
 
 /* enum Types {
   ordinary,
@@ -51,7 +50,7 @@ class Masterchain extends Blockchain {
 
 class Shardchain extends Blockchain {
   int _id = 0; //Uint32
-  final shardPrefix _prefix = shardPrefix(); //Uint8Array
+  final ShardPrefix _prefix = ShardPrefix(); //Uint8Array
 
   Shardchain(int id) {
     if (Utiles.isUint32(id)) {
