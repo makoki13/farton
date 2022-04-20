@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 
 import './utiles.dart';
 import './shard_prefix.dart';
+import './cell.dart';
 
 /* enum Types {
   ordinary,
